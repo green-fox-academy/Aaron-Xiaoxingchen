@@ -1,13 +1,13 @@
 'use strict';
 
+
 const lineCount = 6;
 
-for(var i = 1; i <= lineCount; i++){
-    var str = '';
-    for(var j = 1; j <= lineCount; j++){
-        if(i = 1 || i == lineCount){
-            
-        }
+for (let index = 0; index < lineCount; index++) {
+    if (index === 0 || index === lineCount - 1) {
+        console.log("%".repeat(lineCount));
+    } else {
+        console.log("%" + ' '.repeat(index - 1) + "%" + ' '.repeat(lineCount - 2 - index) + "%");
     }
 }
 
