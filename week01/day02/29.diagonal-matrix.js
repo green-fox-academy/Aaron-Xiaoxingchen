@@ -1,14 +1,13 @@
 'use strict';
 
-var list = [];
-for(let i = 0; i < 4; i++){
-    var str = '';
-    for(let j = 0; j < 4; j++){
-        str += '0 ';
-        
+function DimentionList(n) {
+    for (let index = 1; index <= n; index++) 
+    {
+      console.log('0 '.repeat(n-index)+'1'+' 0'.repeat(index-1));
     }
-    console.log();
 }
+
+DimentionList(4);
 
 // - Create (dynamically*) a two dimensional list
 //   with the following matrix**. Use a loop!
