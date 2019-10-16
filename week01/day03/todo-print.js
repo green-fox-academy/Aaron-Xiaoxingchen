@@ -12,4 +12,4 @@
 
 var todoText = " - Buy milk\n";
 
-console.log(todoText);
+console.log("My todo:\n" + todoText + " - Download games\n" + "     - Diablo" );
