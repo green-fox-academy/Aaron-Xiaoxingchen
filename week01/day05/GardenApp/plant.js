@@ -1,0 +1,8 @@
+class Plant{
+    needsWater(){
+
+    }
+    water(){
+        
+    }
+}
