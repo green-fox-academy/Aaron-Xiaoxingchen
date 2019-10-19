@@ -8,7 +8,7 @@ class Plant{
         return this.waterlevel < this.minimumWaterLevel;
     }
     water(amount){
-        return this.waterlevel += amount * this.absortLevel;
+        return this.waterlevel += amount * this.absorbLevel;
     }
 
     toString(){
