@@ -1,6 +1,6 @@
-export default interface Tree {
+export default interface Tree<T> {
   empty(): boolean;
-  add(value: string): void;
-  remove(value: string): void;
-  search(value: string): boolean
+  add(value: T): void;
+  remove(value: T): void;
+  search(value: T): boolean
 }
