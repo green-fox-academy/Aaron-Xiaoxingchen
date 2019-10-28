@@ -1,0 +1,20 @@
+#main{
+    width: 300px;
+    height: 250px;
+    font-size: 36px;
+    color: white;
+    background-color: rgb(230, 118, 118);
+    border: 15px solid rgb(66, 133, 244) ;
+    text-align: center;
+}
+
+#remain{
+    width: 300px;
+    height: 250px;
+    font-size: 36px;
+    color: white;
+    background-color: rgb(160, 230, 230);
+    border: 15px solid rgb(66, 133, 244) ;
+    text-align: center;
+    margin-top: 5px;
+}
