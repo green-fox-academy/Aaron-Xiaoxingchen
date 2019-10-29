@@ -1,0 +1,21 @@
+div.container{
+    height: 200px;
+    display: flex;
+    flex-wrap: row nowrap;
+}
+div.item-green{
+    background: rgb(81, 212, 0);
+    width: 30%;
+    height: 100%;
+    align-items:flex-end;
+}
+div.item-yellow{
+    background: rgb(255, 214, 42);
+    width: 30%;
+    height: 100%;
+}
+div.item-purple{
+    background: rgb(176, 42, 255);
+    width: 30%;
+    height: 100%;
+}

@@ -1,0 +1,16 @@
+.container{
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(255, 214, 42);
+}
+
+.child{
+    background-color: rgb(176, 42, 255);
+    height : 200px;
+    width: 200px;
+    position: relative;
+    left : 200px;
+    right: 200px;
+    top: 100px;
+    bottom: 100px;
+}

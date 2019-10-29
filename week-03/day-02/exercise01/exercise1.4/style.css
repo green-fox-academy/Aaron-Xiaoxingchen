@@ -1,0 +1,24 @@
+div.container{
+    display: flex;
+    flex-direction: column;
+    width: 2000px;
+    height: 1000px;
+}
+
+.item-green{
+    background-color: rgb(81, 212, 0);
+    width: 40%;
+    height: 25%;
+}
+
+.item-yellow{
+    background-color:  rgb(255, 214, 42);
+    width: 40%;
+    height: 50%;
+}
+
+.item-purple{
+    background-color: rgb(176, 42, 255);
+    width: 40%;
+    height: 25%;
+}
