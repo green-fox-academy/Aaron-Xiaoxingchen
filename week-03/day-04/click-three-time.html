@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>click</button>
+    <p></p>
+			<script>
+				let counter = 0;
+				let timer = new Date();
+				window.addEventListener('load', timer);
+				document.addEventListener('click', ()=>{
+					if(new Date() - timer > 5000){
+						counter++;
+						if(counter >= 3){
+							document.querySelector('p').innerText = '5 seconds elapsed and clicked 3 times';
+						}
+					}
+				});
+
+				// window.addEventListener('load', () =>{
+				// 	setTimeout(()=>{count = 0},5000)
+				// })
+				// document.querySelector('button').addEventListener('click', onclick = ()=>{
+				// 	count++;
+				// 	if(count >= 3){
+				// 		document.querySelector('p').innerText = '5 seconds elapsed and clicked 3 times';
+				// 	}
+				// })
+				
+			</script>
+    <script>
+			
+    </script>
+</body>
+</html>
