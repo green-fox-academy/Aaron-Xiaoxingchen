@@ -1,0 +1,30 @@
+.container{
+    border: 2px solid blue;
+    height: 70px;
+    display:flex;
+    width: 1000px
+}
+.block{
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+.container0{
+    border: 2px solid blue;
+    height: 70px;
+    display:flex;
+    width: 1000px;
+    background-color: orangered;
+    position: relative;
+    margin-top: 10px;
+}
+.block0{
+    background-color: rgb(93, 57, 117);
+    height: 40px;
+    width: 40px;
+    margin-left: 55px;
+    margin-top: 15px;
+}
