@@ -4,3 +4,9 @@ h1{
 h2{
     color: rgb(228, 166, 21);
 }
+body > ul > li{
+    color: rgb(21, 0,235);
+}
+ul > ul > li :first-child{
+    color: red;
+}
