@@ -1,0 +1,78 @@
+body{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: white;
+    width: 45%;
+    height: 400px;
+    margin-top: 50px;
+    padding: 20px 50px;
+}
+
+.formField{
+    display: block;
+    border: 0;
+    border-bottom: 1px solid black; 
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    padding-top: 18px;
+}
+.formField:focus{
+    border-bottom:2px green;
+}
+
+#sign{
+    background-color: green;
+    border-radius: 3px;
+    color: white;
+    margin-top: 40px;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+}
+.left{
+    float: left;
+}
+.right::after{
+    clear: both;
+    display: block;
+}
+.Icon{
+    display: block;
+    width: 220px;
+    height: 40px;
+    border: 0px;
+    margin-top: 18px;
+}
+
+.middle{
+    float:left;
+    margin: 100px 70px 0px 100px;
+    background-color: rgb(221,221,221);
+    height:30px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top:10px;
+    color:gray;
+    box-shadow: 0 2px 4px 1px ;
+}
+.right{
+    float:right;
+    margin-top: 70px;
+}
+#FB{
+    background-color: rgb(56,81,138);
+}
+#TW{
+    background-color: rgb(107,171,232);
+}
+#GO{
+    background-color: rgb(205,85,66);
+}
