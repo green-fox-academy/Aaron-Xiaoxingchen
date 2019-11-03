@@ -1,0 +1,38 @@
+.wrap{
+    width: 90vw;
+    margin: 3px auto;
+}
+nav{
+    background-color: rgb(176,42,255);
+    display: flex;
+}
+.nav-item{
+    height: 30px;
+    background-color: rgb(42,234,255);
+    margin: 10px 0 10px 15px;
+  }
+  .nav-item:first-child{
+    width: 100px;
+  }
+  
+  .nav-item:nth-child(2){
+    width: 80px;
+  }
+  
+  .nav-item:last-child{
+    width: 95px;
+  }
+  .frame{
+      height: 500px;;
+  }
+  aside{
+      display: flex;
+  }
+  .yellow{
+      background-color: rgb(249, 214, 83);
+      flex-grow:2;
+  }
+  .green{
+      background-color: rgb(81,212,0);
+      flex-grow: 1;
+  }

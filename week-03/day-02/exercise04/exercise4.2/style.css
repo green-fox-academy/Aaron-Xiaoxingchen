@@ -1,0 +1,47 @@
+nav{
+    background-color: rgb(176, 42, 255);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav-item{
+    height: 30px;
+    background-color: rgb(42, 234, 255);
+    margin: 10px 15px 10px 0;
+    width: 80px;
+}
+.nav-item:nth-child(2){
+    width: 100px;
+}
+.fix{
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+}
+.wrap{
+    width: 90vw;
+    margin: 60px auto;
+}
+.frame{
+    height: 500px;
+}
+article{
+    display: flex;
+    /* margin-top: 10px; */
+}
+.green{
+    background-color: rgb(81,212,0);
+    flex-grow: 1;
+    margin-right: 5px;
+}
+.yellow{
+    background-color: rgb(249,214,83);
+    flex-grow: 2;
+    margin-right: 5px;
+}
+footer{
+    height: 50px;
+    background-color: rgb(204, 204, 204);
+    margin-top: 10px;
+}
