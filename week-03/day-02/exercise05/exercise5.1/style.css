@@ -1,0 +1,46 @@
+.wrap{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    flex-grow: 1;
+    background-color: rgb(131, 240, 241);
+}
+aside{
+    display: flex;
+    flex-grow: 4;
+}
+footer{
+    flex-grow: 1;
+}
+.yellow{
+    background-color: rgb(242, 168, 59);
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.red{
+    background-color: rgb(234,50,35);
+    flex-grow: 3;
+    margin-right: 10px;
+    position: relative;
+}
+.blackBox{
+    background-color: black;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+}
+.purple{
+    background-color: rgb(117, 28, 123);
+    flex-grow: 1;
+}
+.footer{
+    background-color: rgb(0, 36, 224);
+    flex-grow: 1;
+}
