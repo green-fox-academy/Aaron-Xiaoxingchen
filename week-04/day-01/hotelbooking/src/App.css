@@ -1,0 +1,73 @@
+.App {
+  width: 90vw;
+}
+.App-header{
+  margin: 12px auto auto 50px;
+  font-weight: bold;
+  font-size: 50px;
+  border-top: 1px solid black; 
+}
+.container{
+  display: flex;
+  margin-top:12px;
+}
+aside{
+  width: 250px;
+  /* background-color: black; */
+  /* height: 1000px; */
+  margin: 12px auto auto 50px;
+  flex-grow: 1;
+}
+.HotelFilter{
+  border: 1px solid black;
+  margin-top: 10px;
+}
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+main{
+  flex-grow: 3;
+  margin: 12px auto auto 50px;
+}
+
+.HotelList h1{
+  font-size: 20px;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+}
+.content{
+  border: 1px solid black;
+  margin-top: 12px;
+  display: flex;
+}
+.left{
+  margin-left: 12px;
+}
+
+.right{
+  margin: 30px auto auto 30px;
+}
+/* .App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+} */
