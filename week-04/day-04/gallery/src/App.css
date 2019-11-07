@@ -1,0 +1,46 @@
+/* .App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+} */
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 60vh;
+}
+
+body{
+  background-color:whitesmoke;
+}
+.arrow{
+  flex-grow: 1;
+}
+.right-arrow{
+  transform: scaleX(-1);
+}
+main{
+  display: flex;
+  justify-content: center;
+  flex-grow: 3;
+}
+.main-img{
+  width: 500px;
+  height: 500px;
+  flex-grow: 5;
+}
+.thumnails{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.thumbnail-img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+
+
+
