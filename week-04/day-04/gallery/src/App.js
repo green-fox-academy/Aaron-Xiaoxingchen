@@ -1,4 +1,4 @@
-import React ,{useState} from 'react';
+import React ,{useState, useEffect} from 'react';
 import './App.css';
 import arrow from './arrow.svg';
 import Image from './images/Image'
@@ -16,6 +16,19 @@ function App() {
     curIdx > 0 ? setCurIdx(curIdx - 1) : setCurIdx(Image.length - 1);
   }
   
+  function keyHandler(event){
+    if(event.keyCode === 37){
+      nextImg();
+    }else if(event.keyCode === 39){
+      prevImg();
+    }
+  }
+
+  useEffect(()=>{
+    window.addEventListener('keydown', keyHandler);
+    return()=>window.removeEventListener('keydown', keyHandler);
+  });
+
   return (
     <div className = "container">
       <main>
