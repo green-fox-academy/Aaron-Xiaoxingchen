@@ -5,7 +5,7 @@ import './App.css';
 class App extends React.Component{
   constructor(props){
     super(props);
-    this.state = {acornNum:0};
+    this.state = {acornNum:0,};
   }
 
   componentDidMount(){
@@ -27,6 +27,7 @@ class App extends React.Component{
   }
   handleDecrease(){
     const {acornNum} = this.state;
+    //const acornNum = this.state.acornNum;
     if(acornNum <= 0){
       return;
     }
@@ -37,7 +38,7 @@ class App extends React.Component{
   render(){
     const {acornNum} = this.state;
     return(
-      <div className = "APp">
+      <div className = "App">
         <input type="submit" value="Buy one" onClick={this.handleIncrement.bind(this)}/>
         <p>{acornNum}</p>
         <input type="submit" value="Eat one" onClick={this.handleDecrease.bind(this)}/>
@@ -46,4 +47,3 @@ class App extends React.Component{
   }
 }
 export default App;
-

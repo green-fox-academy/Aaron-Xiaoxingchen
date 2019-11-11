@@ -24,8 +24,11 @@ function Todo(props){
   })
 
   function handleAction(text){
-    if(text !== ''&& !todos.some((item)=>item === text)){
+    if(text !== ''&& !todos.map((item)=>item.text).includes(text)){
       addTodo(text);
+    }
+    else{
+      alert(`'${text}' has already exist`);
     }
   }
 
@@ -34,7 +37,7 @@ function Todo(props){
   }
 
   function removeTodo(done){
-    setTodos(todos.filter(item => item.text === done.text))
+    setTodos(todos.filter(item => item.text !== done.text))
   }
   
   function toggleTodo(todo){

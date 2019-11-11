@@ -1,9 +1,12 @@
 import React from 'react';
 
+const style = {
+  width: `${100/4}%`
+}
 function Thumbnail({imageSrc,thumbnailClick }) {
-
+  
   return (
-      <img className="thumbnail-img" src={imageSrc} onClick={thumbnailClick} alt="WhereIsTheImage"/>
+      <img style = {style} className="thumbnail-img" src={imageSrc} onClick={thumbnailClick} alt="WhereIsTheImage"/>
   );
 }
 export default Thumbnail;

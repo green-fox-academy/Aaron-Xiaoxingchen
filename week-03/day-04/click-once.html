@@ -20,13 +20,13 @@
     <script>
 			//first 
 			document.querySelector('button').addEventListener('click', function onClick(){
-				console.log(Date.now());
-				e.target.removeEventListener('click', onClick());
+			console.log(Date.now());
+			e.target.removeEventListener('click', onClick());
 			})
 			//second
 			document.querySelector('button').addEventListener('click', function onClick(){
-				console.log(Date.now());
-				this.onClick() = null;
+        console.log(Date.now());
+        this.onClick() = null;
 			})
     </script>
   </body>
