@@ -6,26 +6,32 @@ class App extends React.Component{
     super(props);
     this.state = {
       submitted: false,
-      firstName: '',
-      lastName: '',
-      emailAddress: ''
-            
+      info: {
+        firstName: '',
+        lastName: '',
+        emailAddress: ''
+      }     
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event){
-    this.setState({
-      [event.target.name]: event.target.value
-    })
+    const inputName = event.target.name;
+    const value = event.target.value;
+    this.setState((prevState) => ({
+      info: {
+        ...prevState.info,
+        [inputName]: value,
+      },
+    }));
   }
 
   handleSubmit(event) {
     event.preventDefault();
     this.setState({  
       submitted: true,
-      })
+    })
   }
 
   render(){
@@ -42,12 +48,12 @@ class App extends React.Component{
           </label>
           <label>
             Email Address:
-            <input type = "text" name = "emailAddr" placeholder = "Email Address" onChange = {this.handleChange}></input>
+            <input type = "text" name = "emailAddress" placeholder = "Email Address" onChange = {this.handleChange}></input>
           </label>
           <input type = "submit" value = "Submit"></input>
         </form>
         <ul>
-          {this.state.submitted && Object.values(this.state).map((item, index) => <li key={index}>{item}</li>)}
+          {this.state.submitted && Object.keys(this.state.info).map((key) => <li data-key={key} key={key}>{this.state.info[key]}</li>)}
         </ul>
       </>
     )
