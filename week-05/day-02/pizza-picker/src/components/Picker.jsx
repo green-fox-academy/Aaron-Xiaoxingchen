@@ -55,9 +55,27 @@ class Picker extends React.Component{
           </fieldset>
           <fieldset>
             Toppings:
-            <label><input type="checkbox" name="Cheesewithegg" checked = {this.state.toppings.includes('Cheesewithegg')} onChange = {this.handleChange}/>Cheesewithegg</label>
-            <label><input type="checkbox" name="Onionwithbeef" checked = {this.state.toppings.includes('Onionwithbeef')} onChange = {this.handleChange}/> Onionwithbeef</label>
-            <label><input type="checkbox" name="TomatowithChicken" checked = {this.state.toppings.includes('TomatowithChicken')}onChange = {this.handleChange}/> TomatowithChicken</label>
+            <label>
+              <input 
+                type="checkbox" 
+                name="Cheesewithegg"  
+                onChange = {this.handleChange}/>
+                Cheesewithegg
+              </label>
+            <label>
+              <input 
+              type="checkbox" 
+              name="Onionwithbeef"  
+              onChange = {this.handleChange}/> 
+              Onionwithbeef
+              </label>
+            <label>
+              <input 
+              type="checkbox" 
+              name="TomatowithChicken" 
+              onChange = {this.handleChange}/> 
+              TomatowithChicken
+            </label>
           </fieldset>
           <fieldset>
           <label>
@@ -65,21 +83,27 @@ class Picker extends React.Component{
             <input 
               name = "cut"
               type = "radio"
-              checked = {this.state.cut}
+              value = "Yes"
               onChange = {this.handleChange}
             /> Yes
             <input 
               name = "cut"
               type = "radio"
-              checked = {this.state.cut}
+              value = "No"
               onChange = {this.handleChange}
             /> No
           </label>
           </fieldset>
           <fieldset>
-            <textarea name="comment" onChange = {this.handleChange}></textarea><br/>
+            <textarea 
+              name="comment" 
+              onChange = {this.handleChange}>
+            </textarea><br/>
           </fieldset>
-          <input type= "submit" value = "Submit"></input>
+          <input 
+            type= "submit" 
+            value = "Submit">
+          </input>
         </form>
       </>
     )
