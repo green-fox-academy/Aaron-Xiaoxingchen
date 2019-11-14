@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Weather Report</h1>
+    <div class="weather-city">
+      <%forecasts.forEach((item) => {%>
+        <div class="each-city">
+          <div class = "info">
+            <h1><%=item.city%></h1>
+            <h4><%=item.location%></h4>
+          </div>
+          <div class ="sign">
+            <div class="temperature"><%=item.weather[0].temp%>°C</div>
+            <img src="/static/<%= item.weather[0].icon %>.png"/>
+          </div>
+        </div>
+      <%})%>
+      </div>
+  </body>
+</html>

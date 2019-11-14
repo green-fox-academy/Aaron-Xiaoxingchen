@@ -1,0 +1,22 @@
+h1{
+  display: flex;
+  justify-content: center;
+}
+.each-city{
+  border: 1px solid black;
+  width: 50vw;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
+.weather-city{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
