@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cocktails</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body>
+    <h1>Cocktails</h1>
+    <ul>
+      <ol>ALL</ol>
+      <ol>GIN</ol>
+      <ol>VODKA</ol>
+      <ol>RUM</ol>
+      <ol>TEQUILA</ol>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Price</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+        <%cocktails.forEach((item) => {%>
+          <tr>
+            <td><%=item.name%><span><%= item.isAlcoholic? "" : "(non-alcoholic)"%><p><%=item.contains.join(",")%></p></span></td>
+            <td><%=item.price%></td>
+          </tr>
+        <%})%>
+    </tbody>
+    </table>
+  </body>
+</html>
