@@ -21,7 +21,7 @@ export default function reducer(state = initialState, action){
     case SEND_MESSAGE_SUCCESS:
       return{
         ...state,
-        messages: action.payLoad,
+        messages: [...state.messages, action.payLoad]
       }
     case SEND_MESSAGE_FAILURE:
       return{

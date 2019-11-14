@@ -1,14 +1,12 @@
-import axios from 'axios'
-
 export const SEND_MESSAGE_SUCCESS = 'SEND_MESSAGE_SUCCESS';
 export const SEND_MESSAGE_FAILURE = 'SEND_MESSAGE_FAILURE';
 export const RECEIVE_MESSAGE = 'RECEIVE_MESSAGE';
 export const GET_MESSAGE = 'GET_MESSAGE';
 export const FETCH_MESSAGE_FAILURE = 'FETCH_MESSAGE_FAILURE';
 
-export function getessage(){
-  return{type : GET_MESSAGE};
-}
+// export function getessage(){
+//   return{type : GET_MESSAGE};
+// }
 
 export function receiveMessage(messages){
   return { type: RECEIVE_MESSAGE, payLoad: messages}
@@ -19,14 +17,16 @@ export function fetchMessageFailure(error){
 }
 export function fetchMessage(){
   return(function(dispatch){
-      dispatch(getessage())
-      axios.get('https://stream-vanadium.glitch.me/messages')
+      //dispatch(getessage())
+      fetch('https://stream-vanadium.glitch.me/messages')
         .then(response => {
-          dispatch(receiveMessage(response.data.messages.sort((a,b) => (a.id - b.id))))
+          if(response.status !== 200){
+            throw new Error(`can't get message`);
+          }
+          return response.json();
         })
-        .catch(error => {
-          dispatch(fetchMessageFailure(error))
-        })
+        .then(response => dispatch(receiveMessage(response.messages)))
+        .catch(error => dispatch(fetchMessageFailure(error)))
     }
   )
 }
