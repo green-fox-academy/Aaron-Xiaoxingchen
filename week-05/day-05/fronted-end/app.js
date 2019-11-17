@@ -100,3 +100,29 @@ app.post('/arrays', function(req, res){
 
 app.listen('3000', ()=> 
   console.log('the app is listening 3000'))
+
+app.post('/sith', function(req, res){
+  const {text} = req.body;
+  if(text){
+    res.json({sith_text : `${reverse(text)}`});
+  }else{
+    res.json({  error: "Feed me some text you have to, padawan young you are. Hmmm."
+  })
+  }
+})
+
+function reverse(text){
+  let words = text.split(' ');
+  for(let i = 0; i < words.length - 1; i+=2){
+    if(words[i].indexOf('.') > -1){
+      words[i] += ' uhmm.';
+    }else if(words[i+1].indexOf('.') < 0){
+      [words[i], words[i+1]] = [words[i+1], words[i]];
+      if(words[i+1][0] === words[i+1][0].toUpperCase()){
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+        words[i+1] = words[i+1][0].toLowerCase() + words[i+1].slice(1);
+      }
+    }
+  }
+  return `${words.join(' ')} Err..err.err.`;
+}
