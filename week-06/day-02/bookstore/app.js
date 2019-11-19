@@ -85,7 +85,6 @@ pMySQL.createConnection({
   })
 
   app.get('/books', async function(req, res){
-    const{category,publisher,plt,pgt} = req.query;
 
     const QUERY_FILTER_INFO = `SELECT book_name as title,
     aut_name as author,
