@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BooksInfo</title>
+  </head>
+  <body>
+    <h1>BooksInfo</h1>
+    <table>
+      
+      <thead>
+        <tr>
+          <td>Title</td>
+          <td>Author</td>
+          <td>Category</td>
+          <td>Publisher</td>
+          <td>Price</td>
+        </tr>
+      </thead>
+      <tbody>
+          <%booksInfo.forEach(item =>{%>
+          <tr>
+            <td><%=item.title%></td>
+            <td><%=item.author%></td>
+            <td><%=item.category%></td>
+            <td><%=item.publisher%></td>
+            <td><%=item.price%></td>
+        </tr>
+          <%})%>
+      </tbody>
+    </table>
+  </body>
+</html>
