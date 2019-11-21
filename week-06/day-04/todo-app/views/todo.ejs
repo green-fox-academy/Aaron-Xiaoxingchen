@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body>
+    <h1>Todo</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>Task</td>
+              <td>Completed</td>
+            </tr>
+          </thead>
+          <tbody>
+            <%todos.map((item) =>{%>
+            <tr>
+              <td><%= item.text%></td>
+              <td><%= item.done%></td>
+            </tr>
+            <%})%>
+          </tbody>
+        </table>
+       
+  </body>
+</html>
